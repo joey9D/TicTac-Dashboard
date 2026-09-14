@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>9</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -932,7 +932,7 @@ Einstellungen</string>
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -1014,30 +1014,10 @@ Einstellungen</string>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
-          <spacer name="vS_LogicButtons1">
-           <property name="orientation">
-            <enum>Qt::Orientation::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
          <item row="5" column="0">
           <widget class="QPushButton" name="pB_Clear1">
            <property name="text">
             <string>Clear</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="AnimatedToggle" name="toggle_Button_settings1">
-           <property name="text">
-            <string>toggle Button settings 1</string>
            </property>
           </widget>
          </item>
@@ -1053,6 +1033,19 @@ Einstellungen</string>
             <set>Qt::AlignmentFlag::AlignCenter</set>
            </property>
           </widget>
+         </item>
+         <item row="4" column="0">
+          <spacer name="vS_LogicButtons1">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </item>
@@ -1220,14 +1213,13 @@ Einstellungen</string>
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="AnimatedToggle" name="toggle_Button_settings2">
-           <property name="text">
-            <string>toggle Button settings 2</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
           <widget class="QLabel" name="l_RunState2">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="styleSheet">
             <string notr="true">background-color: green; color: black</string>
            </property>

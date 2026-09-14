@@ -1,6 +1,6 @@
 {
     "files": [
-        "TikTak.ui",
+        "Forms/TikTak.ui",
         "tiktak.py",
         "app_state.py",
         "globals.py",

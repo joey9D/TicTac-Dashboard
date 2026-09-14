@@ -534,19 +534,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.pB_ClearAll)
 
-        self.widget = QWidget(self.tab_general)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(120, 40, 51, 121))
-        self.vL_Led1_5 = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.tab_general)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(120, 40, 51, 121))
+        self.vL_Led1_5 = QVBoxLayout(self.layoutWidget)
         self.vL_Led1_5.setObjectName(u"vL_Led1_5")
         self.vL_Led1_5.setContentsMargins(0, 0, 0, 0)
-        self.lbl_Output_Active = QLabel(self.widget)
+        self.lbl_Output_Active = QLabel(self.layoutWidget)
         self.lbl_Output_Active.setObjectName(u"lbl_Output_Active")
         self.lbl_Output_Active.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.vL_Led1_5.addWidget(self.lbl_Output_Active)
 
-        self.lbl_Input_active = QLabel(self.widget)
+        self.lbl_Input_active = QLabel(self.layoutWidget)
         self.lbl_Input_active.setObjectName(u"lbl_Input_active")
         self.lbl_Input_active.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
@@ -577,19 +577,10 @@ class Ui_MainWindow(object):
 
         self.fL_Logic1.setWidget(1, QFormLayout.ItemRole.LabelRole, self.pB_Stop1)
 
-        self.vS_LogicButtons1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
-
-        self.fL_Logic1.setItem(4, QFormLayout.ItemRole.LabelRole, self.vS_LogicButtons1)
-
         self.pB_Clear1 = QPushButton(self.horizontalLayoutWidget)
         self.pB_Clear1.setObjectName(u"pB_Clear1")
 
         self.fL_Logic1.setWidget(5, QFormLayout.ItemRole.LabelRole, self.pB_Clear1)
-
-        self.toggle_Button_settings1 = AnimatedToggle(self.horizontalLayoutWidget)
-        self.toggle_Button_settings1.setObjectName(u"toggle_Button_settings1")
-
-        self.fL_Logic1.setWidget(2, QFormLayout.ItemRole.LabelRole, self.toggle_Button_settings1)
 
         self.l_RunState1 = QLabel(self.horizontalLayoutWidget)
         self.l_RunState1.setObjectName(u"l_RunState1")
@@ -597,6 +588,10 @@ class Ui_MainWindow(object):
         self.l_RunState1.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         self.fL_Logic1.setWidget(2, QFormLayout.ItemRole.FieldRole, self.l_RunState1)
+
+        self.vS_LogicButtons1 = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.fL_Logic1.setItem(4, QFormLayout.ItemRole.LabelRole, self.vS_LogicButtons1)
 
 
         self.hL_Logic1.addLayout(self.fL_Logic1)
@@ -711,17 +706,12 @@ class Ui_MainWindow(object):
 
         self.fL_Logic2.setWidget(4, QFormLayout.ItemRole.LabelRole, self.pB_Clear2)
 
-        self.toggle_Button_settings2 = AnimatedToggle(self.horizontalLayoutWidget_2)
-        self.toggle_Button_settings2.setObjectName(u"toggle_Button_settings2")
-
-        self.fL_Logic2.setWidget(2, QFormLayout.ItemRole.LabelRole, self.toggle_Button_settings2)
-
         self.l_RunState2 = QLabel(self.horizontalLayoutWidget_2)
         self.l_RunState2.setObjectName(u"l_RunState2")
         self.l_RunState2.setStyleSheet(u"background-color: green; color: black")
         self.l_RunState2.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        self.fL_Logic2.setWidget(2, QFormLayout.ItemRole.FieldRole, self.l_RunState2)
+        self.fL_Logic2.setWidget(2, QFormLayout.ItemRole.LabelRole, self.l_RunState2)
 
 
         self.hL_Logic2.addLayout(self.fL_Logic2)
@@ -1851,7 +1841,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(9)
+        self.tabWidget.setCurrentIndex(2)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1926,7 +1916,6 @@ class Ui_MainWindow(object):
         self.pB_Start1.setText(QCoreApplication.translate("MainWindow", u"Start", None))
         self.pB_Stop1.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
         self.pB_Clear1.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
-        self.toggle_Button_settings1.setText(QCoreApplication.translate("MainWindow", u"toggle Button settings 1", None))
         self.l_RunState1.setText(QCoreApplication.translate("MainWindow", u"Stopped", None))
         self.l_OnTime1.setText(QCoreApplication.translate("MainWindow", u"On Time (ms):", None))
         self.l_OffTime1.setText(QCoreApplication.translate("MainWindow", u"Off Time (ms):", None))
@@ -1939,7 +1928,6 @@ class Ui_MainWindow(object):
         self.pB_Start2.setText(QCoreApplication.translate("MainWindow", u"Start", None))
         self.pB_Stop2.setText(QCoreApplication.translate("MainWindow", u"Stop", None))
         self.pB_Clear2.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
-        self.toggle_Button_settings2.setText(QCoreApplication.translate("MainWindow", u"toggle Button settings 2", None))
         self.l_RunState2.setText(QCoreApplication.translate("MainWindow", u"Stopped", None))
         self.l_OnTime2.setText(QCoreApplication.translate("MainWindow", u"On Time (ms):", None))
         self.l_OffTime2.setText(QCoreApplication.translate("MainWindow", u"Off Time (ms):", None))
