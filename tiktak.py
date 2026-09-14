@@ -14,7 +14,7 @@ from animated_toggle import AnimatedToggle
 # ------------------------------------------------------------------------
 # Global variables
 # ------------------------------------------------------------------------
-# import globals as g
+import globals as g
 
 # ------------------------------------------------------------------------
 # window state of the application
@@ -75,25 +75,29 @@ import button_functions as bf
 # ------------------------------------------------------------------------
 # Main Function
 # ------------------------------------------------------------------------
+import mainwindow as mw
+
 
 if __name__ == "__main__":
 
     app = QApplication(sys.argv)
 
-    ui_file_name = "TikTak.ui"
-    ui_file = QFile(ui_file_name)
-    if not ui_file.open(QIODevice.ReadOnly):
-        print(f"Cannot open {ui_file_name}: {ui_file.errorString()}")
-        sys.exit(-1)
-    loader = QUiLoader()
-    loader.registerCustomWidget(AnimatedToggle)
-    
-    state.window = loader.load(ui_file)
-    ui_file.close()
-    if not state.window:
-        print(loader.errorString())
-        sys.exit(-1)
+    state.window = mw.MainWindow(g.UI_MAIN)
     state.window.show()
+    # ui_file_name = "TikTak.ui"
+    # ui_file = QFile(ui_file_name)
+    # if not ui_file.open(QIODevice.ReadOnly):
+    #     print(f"Cannot open {ui_file_name}: {ui_file.errorString()}")
+    #     sys.exit(-1)
+    # loader = QUiLoader()
+    # loader.registerCustomWidget(AnimatedToggle)
+    
+    # state.window = loader.load(ui_file)
+    # ui_file.close()
+    # if not state.window:
+    #     print(loader.errorString())
+    #     sys.exit(-1)
+    # state.window.show()
 
     # ------------------------------------------------------------
     # Create Outputs
