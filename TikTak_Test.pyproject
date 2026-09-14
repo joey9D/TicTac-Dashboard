@@ -1,0 +1,12 @@
+{
+    "files": [
+        "TikTak.ui",
+        "tiktak.py",
+        "app_state.py",
+        "globals.py",
+        "inputchannel.py",
+        "outputchannel.py",
+        "button_functions.py",
+        "animated_toggle.py"
+    ]
+}

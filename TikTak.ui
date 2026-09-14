@@ -1,0 +1,3120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>419</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TikTak</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>681</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>9</number>
+    </property>
+    <widget class="QWidget" name="tab_general">
+     <attribute name="title">
+      <string>Dashboard</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>10</y>
+        <width>501</width>
+        <height>311</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="1">
+        <widget class="QLabel" name="lbl_Button6">
+         <property name="text">
+          <string>Taster 6</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <layout class="QVBoxLayout" name="vL_Led6">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_29">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed6">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt6">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_30">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed6">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt6">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings6">
+           <property name="text">
+            <string>Taster 6
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_Button5">
+         <property name="text">
+          <string>Taster 5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="lbl_Button8">
+         <property name="text">
+          <string>Taster 8</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <layout class="QVBoxLayout" name="vL_Led5">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_25">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed5">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt5">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_26">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed5">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt5">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings5">
+           <property name="text">
+            <string>Taster 5
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="lbl_Button7">
+         <property name="text">
+          <string>Taster 7</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+         <property name="wordWrap">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <layout class="QVBoxLayout" name="vL_Led4">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed4">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt4">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed4">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt4">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings4">
+           <property name="text">
+            <string>Taster 4
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="lbl_Button4">
+         <property name="text">
+          <string>Taster 4</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <layout class="QVBoxLayout" name="vL_Led7">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_31">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed7">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt7">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_32">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed7">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt7">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings7">
+           <property name="text">
+            <string>Taster 7
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_Button1">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Plain</enum>
+         </property>
+         <property name="text">
+          <string>Taster 1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="lbl_Button3">
+         <property name="text">
+          <string>Taster 3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <layout class="QVBoxLayout" name="vL_Led2">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed2">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt2">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed2">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt2">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings2">
+           <property name="text">
+            <string>Taster 2
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="1" column="0">
+        <layout class="QVBoxLayout" name="vL_Led1">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed1">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt1">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed1">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt1">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings1">
+           <property name="text">
+            <string>Taster 1
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLabel" name="lbl_Button2">
+         <property name="text">
+          <string>Taster 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <layout class="QVBoxLayout" name="vL_Led3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed3">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt3">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed3">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt3">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings3">
+           <property name="text">
+            <string>Taster 3
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="3">
+        <layout class="QVBoxLayout" name="vL_Led8">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_27">
+           <item>
+            <widget class="QLabel" name="lbl_OutputLed8">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_OutputCnt8">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_28">
+           <item>
+            <widget class="QLabel" name="lbl_InputLed8">
+             <property name="minimumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>31</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: green;</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="lbl_InputCnt8">
+             <property name="frameShape">
+              <enum>QFrame::Shape::Box</enum>
+             </property>
+             <property name="text">
+              <string>0</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pB_ButtonSettings8">
+           <property name="text">
+            <string>Taster 8
+Einstellungen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>91</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pB_StartAll">
+         <property name="text">
+          <string>Start All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pB_StopAll">
+         <property name="text">
+          <string>Stop All</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pB_ClearAll">
+         <property name="text">
+          <string>Clear All</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>40</y>
+        <width>51</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="vL_Led1_5">
+       <item>
+        <widget class="QLabel" name="lbl_Output_Active">
+         <property name="text">
+          <string>Out</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbl_Input_active">
+         <property name="text">
+          <string>In</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Preferred</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B1">
+     <attribute name="title">
+      <string>Taster 1</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic1">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic1">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start1">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop1">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <spacer name="vS_LogicButtons1">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="5" column="0">
+          <widget class="QPushButton" name="pB_Clear1">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings1">
+           <property name="text">
+            <string>toggle Button settings 1</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState1">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter1">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime1">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime1">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime1">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime1">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime1">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter1">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort1">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort1"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt1">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut1">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn1">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal1">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal1">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B2">
+     <attribute name="title">
+      <string>Taster 2</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic2">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start2">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop2">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear2">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings2">
+           <property name="text">
+            <string>toggle Button settings 2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState2">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter2">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime2">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime2">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime2">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime2">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter2">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort2">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort2"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut2">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn2">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal2">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal2">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B3">
+     <attribute name="title">
+      <string>Taster 3</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic3">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic3">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start3">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop3">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons3">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear3">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings3">
+           <property name="text">
+            <string>toggle Button settings 3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState3">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter3">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime3">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime3">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime3">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime3">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime3">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter3">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort3">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort3"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt3">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut3">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn3">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal3">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal3">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B4">
+     <attribute name="title">
+      <string>Taster 4</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic4">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic4">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start4">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop4">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons4">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear4">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings4">
+           <property name="text">
+            <string>toggle Button settings 4</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState4">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter4">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime4">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime4">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime4">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime4">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime4">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter4">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort4">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort4"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt4">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut4">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn4">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal4">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal4">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B5">
+     <attribute name="title">
+      <string>Taster 5</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic5">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic5">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start5">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop5">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons5">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear5">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings5">
+           <property name="text">
+            <string>toggle Button settings 5</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState5">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter5">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime5">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime5">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime5">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime5">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime5">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter5">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort5">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort5"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt5">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut5">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn5">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal5">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal5">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B6">
+     <attribute name="title">
+      <string>Taster 6</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic6">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic6">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start6">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop6">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons6">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear6">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings6">
+           <property name="text">
+            <string>toggle Button settings 6</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState6">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter6">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime6">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime6">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime6">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime6">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime6">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter6">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort6">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort6"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt6">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut6">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn6">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal6">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal6">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B7">
+     <attribute name="title">
+      <string>Taster 7</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic7">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic7">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start7">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop7">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons7">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear7">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings7">
+           <property name="text">
+            <string>toggle Button settings 7</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState7">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter7">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime7">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime7">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime7">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime7">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime7">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter7">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort7">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort7"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt7">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut7">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn7">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal7">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal7">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_B8">
+     <attribute name="title">
+      <string>Taster 8</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>411</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="hL_Logic8">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QFormLayout" name="fL_Logic8">
+         <item row="0" column="0">
+          <widget class="QPushButton" name="pB_Start8">
+           <property name="text">
+            <string>Start</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pB_Stop8">
+           <property name="text">
+            <string>Stop</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <spacer name="vS_LogicButtons8">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pB_Clear8">
+           <property name="text">
+            <string>Clear</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="AnimatedToggle" name="toggle_Button_settings8">
+           <property name="text">
+            <string>toggle Button settings 8</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="l_RunState8">
+           <property name="styleSheet">
+            <string notr="true">background-color: green; color: black</string>
+           </property>
+           <property name="text">
+            <string>Stopped</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignmentFlag::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="vL_Parameter8">
+         <item>
+          <layout class="QFormLayout" name="fL_OnOffTime8">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_OnTime8">
+             <property name="text">
+              <string>On Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QSpinBox" name="sB_OnTime8">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="sB_OffTime8">
+             <property name="maximum">
+              <number>1000</number>
+             </property>
+             <property name="value">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_OffTime8">
+             <property name="text">
+              <string>Off Time (ms):</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="vS_Parameter8">
+           <property name="orientation">
+            <enum>Qt::Orientation::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QLabel" name="l_DiffAbort8">
+             <property name="text">
+              <string>max. Diff. Abort:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QSpinBox" name="sB_DiffAbort8"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="fL_Cnt8">
+           <property name="sizeConstraint">
+            <enum>QLayout::SizeConstraint::SetFixedSize</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="l_CntOut8">
+             <property name="text">
+              <string>Counter Out:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="l_CntIn8">
+             <property name="text">
+              <string>Counter In:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="l_CntOutVal8">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="l_CntInVal8">
+             <property name="text">
+              <string>0</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Manuell</string>
+     </attribute>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>371</width>
+        <height>319</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="3" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button3">
+         <property name="text">
+          <string>toggle Button3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_toggleAll">
+         <property name="text">
+          <string>All</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button6">
+         <property name="text">
+          <string>toggle Button6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="lbl_Button8_3">
+         <property name="text">
+          <string>Taster 7</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lbl_Button8_2">
+         <property name="text">
+          <string>Taster 8</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out6">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button2">
+         <property name="text">
+          <string>toggle Button2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button8">
+         <property name="text">
+          <string>toggle Button8</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lbl_toggleButton3">
+         <property name="text">
+          <string>Taster 3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out4">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out3">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_2">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>Out</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out2">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out1">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out7">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_toggleButton6">
+         <property name="text">
+          <string>Taster 6</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_3">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out5">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_toggleButton2">
+         <property name="text">
+          <string>Taster 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lbl_toggleButton5">
+         <property name="text">
+          <string>Taster 5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button4">
+         <property name="text">
+          <string>toggle Button4</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button7">
+         <property name="text">
+          <string>toggle Button7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbl_toggleButton1">
+         <property name="text">
+          <string>Taster 1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="AnimatedToggle" name="toggle_All">
+         <property name="text">
+          <string>toggle All</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button1">
+         <property name="text">
+          <string>toggle Button1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button5">
+         <property name="text">
+          <string>toggle Button5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_toggleButton4">
+         <property name="text">
+          <string>Taster 4</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out8">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="label_4">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>In</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In1">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In2">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In3">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In4">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In5">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In6">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In7">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In8">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>720</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAllgemein">
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <addaction name="actionVersion_2"/>
+   </widget>
+   <addaction name="menuAllgemein"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionVersion">
+   <property name="text">
+    <string>Version</string>
+   </property>
+  </action>
+  <action name="actionVersion_2">
+   <property name="text">
+    <string>Version</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AnimatedToggle</class>
+   <extends>QCheckBox</extends>
+   <header>animatedtoggle.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
