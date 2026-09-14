@@ -5,6 +5,7 @@ name = "TikTak_Test"
 files = [
     "Forms/TikTak.ui",
     "Forms/about.ui",
+    "about.py",
     "animated_toggle.py",
     "app_state.py",
     "button_functions.py",
