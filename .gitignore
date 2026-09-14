@@ -1,0 +1,35 @@
+# Qt Creator
+.qtcreator/
+*.pro.user
+*.pro.user.*
+*.autosave
+CMakeLists.txt.user
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtuelle Umgebungen
+venv/
+.venv/
+env/
+ENV/
+
+# Distribution / Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.spec
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS-spezifisch
+.DS_Store
+Thumbs.db
