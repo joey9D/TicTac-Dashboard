@@ -1,4 +1,6 @@
-# state.py – veränderlicher, geteilter Zustand als Objekt statt lose Variablen
+
+
+
 class AppState:
     def __init__(self):
         self.window = None

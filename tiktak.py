@@ -5,10 +5,6 @@ from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice, QObject, QThread, Signal
 from functools import partial
-
-# ------------------------------------------------------------------------
-# Global variables
-# ------------------------------------------------------------------------
 from animated_toggle import AnimatedToggle
 
 # ------------------------------------------------------------------------
@@ -26,12 +22,10 @@ import app_state as state
 # ------------------------------------------------------------------------
 import inputchannel as ic
 
-
 # ------------------------------------------------------------------------
 # Output Channel
 # ------------------------------------------------------------------------
 import outputchannel as oc
-
 
 # ------------------------------------------------------------------------
 # Scheduler
@@ -84,20 +78,7 @@ if __name__ == "__main__":
 
     state.window = mw.MainWindow(g.UI_MAIN)
     state.window.show()
-    # ui_file_name = "TikTak.ui"
-    # ui_file = QFile(ui_file_name)
-    # if not ui_file.open(QIODevice.ReadOnly):
-    #     print(f"Cannot open {ui_file_name}: {ui_file.errorString()}")
-    #     sys.exit(-1)
-    # loader = QUiLoader()
-    # loader.registerCustomWidget(AnimatedToggle)
-    
-    # state.window = loader.load(ui_file)
-    # ui_file.close()
-    # if not state.window:
-    #     print(loader.errorString())
-    #     sys.exit(-1)
-    # state.window.show()
+    # state.window.tabWidget.setCurrentIndex(0)
 
     # ------------------------------------------------------------
     # Create Outputs

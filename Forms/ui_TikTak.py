@@ -28,7 +28,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(720, 419)
+        MainWindow.resize(720, 448)
         self.actionVersion = QAction(MainWindow)
         self.actionVersion.setObjectName(u"actionVersion")
         self.actionVersion_2 = QAction(MainWindow)
@@ -37,7 +37,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
-        self.tabWidget.setGeometry(QRect(20, 20, 681, 351))
+        self.tabWidget.setGeometry(QRect(20, 20, 681, 371))
         self.tab_general = QWidget()
         self.tab_general.setObjectName(u"tab_general")
         self.gridLayoutWidget = QWidget(self.tab_general)
@@ -1842,7 +1842,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(9)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
