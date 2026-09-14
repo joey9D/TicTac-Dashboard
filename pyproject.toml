@@ -4,11 +4,12 @@ name = "TikTak_Test"
 [tool.pyside6-project]
 files = [
     "Forms/TikTak.ui",
+    "Forms/about.ui",
     "animated_toggle.py",
     "app_state.py",
     "button_functions.py",
     "globals.py",
     "inputchannel.py",
     "outputchannel.py",
-    "tiktak.py"
+    "tiktak.py",
 ]
