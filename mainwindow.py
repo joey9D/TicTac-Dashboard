@@ -10,7 +10,7 @@ class MainWindow(QMainWindow):
         super().__init__(parent)
         self.ui = None
         self.setWindowTitle("TicTac-Dashboard")
-        self.setGeometry(100, 100, 720, 450) 
+        self.setGeometry(100, 100, 800, 480) 
         self._load_ui(ui_path)
 
     def _load_ui(self, ui_path):
