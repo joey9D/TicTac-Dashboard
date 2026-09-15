@@ -12,6 +12,7 @@ class MainWindow(QMainWindow):
         self.setWindowTitle("TicTac-Dashboard")
         self.setGeometry(100, 100, 800, 480) 
         self._load_ui(ui_path)
+        self.showMaximized()
 
     def _load_ui(self, ui_path):
         ui_file = QFile(ui_path)
