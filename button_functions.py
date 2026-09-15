@@ -77,6 +77,7 @@ class SlotController(QObject):
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: red; color: black")
             getattr(self.window, f"l_RunState{value}").setText("Running")
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: red;")
+            getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: #ff9725;")
 
 
     @Slot(int, list)
@@ -92,6 +93,7 @@ class SlotController(QObject):
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: green; color: black")
             getattr(self.window, f"l_RunState{value}").setText("Stopped")
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: green;")
+            getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: green;")
 
 
     @Slot(int, list)
