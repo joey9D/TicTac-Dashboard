@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>9</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -36,7 +36,7 @@
         <x>170</x>
         <y>10</y>
         <width>501</width>
-        <height>311</height>
+        <height>330</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
@@ -2463,7 +2463,7 @@ Einstellungen</string>
         <x>10</x>
         <y>10</y>
         <width>371</width>
-        <height>319</height>
+        <height>311</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
@@ -3077,7 +3077,7 @@ Einstellungen</string>
      <x>0</x>
      <y>0</y>
      <width>720</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuAllgemein">

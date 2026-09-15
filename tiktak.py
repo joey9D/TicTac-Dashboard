@@ -78,7 +78,6 @@ if __name__ == "__main__":
 
     state.window = mw.MainWindow(g.UI_MAIN)
     state.window.show()
-    # state.window.tabWidget.setCurrentIndex(0)
 
     # ------------------------------------------------------------
     # Create Outputs
