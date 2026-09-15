@@ -2,12 +2,15 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>720</width>
-    <height>448</height>
+    <width>800</width>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,14 +20,14 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>681</width>
-      <height>371</height>
+      <x>10</x>
+      <y>0</y>
+      <width>781</width>
+      <height>421</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>8</number>
+     <number>9</number>
     </property>
     <widget class="QWidget" name="tab_general">
      <attribute name="title">
@@ -35,8 +38,8 @@
        <rect>
         <x>170</x>
         <y>10</y>
-        <width>501</width>
-        <height>330</height>
+        <width>561</width>
+        <height>371</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
@@ -936,9 +939,9 @@ Einstellungen</string>
       <property name="geometry">
        <rect>
         <x>120</x>
-        <y>40</y>
+        <y>60</y>
         <width>51</width>
-        <height>121</height>
+        <height>131</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="vL_Led1_5">
@@ -973,7 +976,7 @@ Einstellungen</string>
          <property name="sizeHint" stdset="0">
           <size>
            <width>20</width>
-           <height>40</height>
+           <height>42</height>
           </size>
          </property>
         </spacer>
@@ -990,8 +993,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic1">
@@ -1171,8 +1174,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic2">
@@ -1358,8 +1361,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic3">
@@ -1539,8 +1542,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic4">
@@ -1720,8 +1723,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic5">
@@ -1901,8 +1904,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic6">
@@ -2082,8 +2085,8 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic7">
@@ -2263,11 +2266,14 @@ Einstellungen</string>
        <rect>
         <x>20</x>
         <y>20</y>
-        <width>411</width>
-        <height>291</height>
+        <width>471</width>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="hL_Logic8">
+       <property name="spacing">
+        <number>-1</number>
+       </property>
        <property name="leftMargin">
         <number>0</number>
        </property>
@@ -2444,372 +2450,11 @@ Einstellungen</string>
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>371</width>
-        <height>321</height>
+        <width>521</width>
+        <height>371</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="3" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button3">
-         <property name="text">
-          <string>toggle Button3</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="0">
-        <widget class="QLabel" name="lbl_toggleAll">
-         <property name="text">
-          <string>All</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button6">
-         <property name="text">
-          <string>toggle Button6</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="0">
-        <widget class="QLabel" name="lbl_Button8_3">
-         <property name="text">
-          <string>Taster 7</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="0">
-        <widget class="QLabel" name="lbl_Button8_2">
-         <property name="text">
-          <string>Taster 8</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out6">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button2">
-         <property name="text">
-          <string>toggle Button2</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button8">
-         <property name="text">
-          <string>toggle Button8</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="lbl_toggleButton3">
-         <property name="text">
-          <string>Taster 3</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out4">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out3">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QLabel" name="label_2">
-         <property name="frameShape">
-          <enum>QFrame::Shape::NoFrame</enum>
-         </property>
-         <property name="text">
-          <string>Out</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out2">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out1">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out7">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="lbl_toggleButton6">
-         <property name="text">
-          <string>Taster 6</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="4">
-        <widget class="QLabel" name="label_3">
-         <property name="frameShape">
-          <enum>QFrame::Shape::NoFrame</enum>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="3">
-        <widget class="QLabel" name="lbl_ManualLed_Out5">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="2">
-        <widget class="QLabel" name="label">
-         <property name="frameShape">
-          <enum>QFrame::Shape::NoFrame</enum>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="0">
-        <widget class="QLabel" name="lbl_toggleButton2">
-         <property name="text">
-          <string>Taster 2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="lbl_toggleButton5">
-         <property name="text">
-          <string>Taster 5</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button4">
-         <property name="text">
-          <string>toggle Button4</string>
-         </property>
-        </widget>
-       </item>
-       <item row="7" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button7">
-         <property name="text">
-          <string>toggle Button7</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="lbl_toggleButton1">
-         <property name="text">
-          <string>Taster 1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="AnimatedToggle" name="toggle_All">
-         <property name="text">
-          <string>toggle All</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button1">
-         <property name="text">
-          <string>toggle Button1</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
-        <widget class="AnimatedToggle" name="toggle_Button5">
-         <property name="text">
-          <string>toggle Button5</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="lbl_toggleButton4">
-         <property name="text">
-          <string>Taster 4</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
        <item row="8" column="3">
         <widget class="QLabel" name="lbl_ManualLed_Out8">
          <property name="minimumSize">
@@ -2835,21 +2480,15 @@ Einstellungen</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="5">
-        <widget class="QLabel" name="label_4">
-         <property name="frameShape">
-          <enum>QFrame::Shape::NoFrame</enum>
-         </property>
+       <item row="4" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button4">
          <property name="text">
-          <string>In</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignmentFlag::AlignCenter</set>
+          <string>toggle Button4</string>
          </property>
         </widget>
        </item>
-       <item row="1" column="5">
-        <widget class="QLabel" name="lbl_ManualLed_In1">
+       <item row="1" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out1">
          <property name="minimumSize">
           <size>
            <width>31</width>
@@ -2898,28 +2537,27 @@ Einstellungen</string>
          </property>
         </widget>
        </item>
-       <item row="3" column="5">
-        <widget class="QLabel" name="lbl_ManualLed_In3">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
+       <item row="0" column="1">
+        <widget class="AnimatedToggle" name="toggle_All">
          <property name="text">
-          <string/>
+          <string>toggle All</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button6">
+         <property name="text">
+          <string>toggle Button6</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="lbl_Button8_2">
+         <property name="text">
+          <string>Taster 8</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -2948,53 +2586,40 @@ Einstellungen</string>
          </property>
         </widget>
        </item>
-       <item row="5" column="5">
-        <widget class="QLabel" name="lbl_ManualLed_In5">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
+       <item row="6" column="0">
+        <widget class="QLabel" name="lbl_toggleButton6">
          <property name="text">
-          <string/>
+          <string>Taster 6</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
-       <item row="6" column="5">
-        <widget class="QLabel" name="lbl_ManualLed_In6">
-         <property name="minimumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>31</width>
-           <height>31</height>
-          </size>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: green;</string>
-         </property>
+       <item row="5" column="0">
+        <widget class="QLabel" name="lbl_toggleButton5">
          <property name="text">
-          <string/>
+          <string>Taster 5</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button8">
+         <property name="text">
+          <string>toggle Button8</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="lbl_toggleButton3">
+         <property name="text">
+          <string>Taster 3</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
          </property>
         </widget>
        </item>
@@ -3023,8 +2648,389 @@ Einstellungen</string>
          </property>
         </widget>
        </item>
+       <item row="5" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button5">
+         <property name="text">
+          <string>toggle Button5</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button7">
+         <property name="text">
+          <string>toggle Button7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out3">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out4">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="lbl_toggleButton2">
+         <property name="text">
+          <string>Taster 2</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out7">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out5">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="lbl_toggleButton4">
+         <property name="text">
+          <string>Taster 4</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
        <item row="8" column="5">
         <widget class="QLabel" name="lbl_ManualLed_In8">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="label_2">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>Out</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button2">
+         <property name="text">
+          <string>toggle Button2</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="label">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button1">
+         <property name="text">
+          <string>toggle Button1</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In5">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out6">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="lbl_Button8_3">
+         <property name="text">
+          <string>Taster 7</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lbl_toggleButton1">
+         <property name="text">
+          <string>Taster 1</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In3">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QLabel" name="label_4">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string>In</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QLabel" name="label_3">
+         <property name="frameShape">
+          <enum>QFrame::Shape::NoFrame</enum>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="AnimatedToggle" name="toggle_Button3">
+         <property name="text">
+          <string>toggle Button3</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lbl_toggleAll">
+         <property name="text">
+          <string>All</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In6">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="lbl_ManualLed_Out2">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>31</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: green;</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QLabel" name="lbl_ManualLed_In1">
          <property name="minimumSize">
           <size>
            <width>31</width>
@@ -3058,7 +3064,7 @@ Einstellungen</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>720</width>
+     <width>800</width>
      <height>30</height>
     </rect>
    </property>
