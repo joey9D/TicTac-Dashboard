@@ -44,21 +44,25 @@ class SlotController(QObject):
                 toggle.blockSignals(False)
                 return
             
-            output.start()
+            # output.start()
+            output.set_manual(True)
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: red;")
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: #ff9725; color: black")
             getattr(self.window, f"l_RunState{value}").setText("Manual")
+            getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: #ff9725;")
             self.output_toggled.emit(value, True)
             
         else:
             if output.owner != "manual":
                 return
             
-            output.stop()
+            # output.stop()
+            output.set_manual(False)
             output.release("manual")
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: green;")
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: green; color: black")
             getattr(self.window, f"l_RunState{value}").setText("Stopped")
+            getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: green;")
             self.output_toggled.emit(value, False)
 
 
@@ -150,3 +154,7 @@ class SlotController(QObject):
         labelLed.setText(str(count))
         label = getattr(self.window, f"l_CntInVal{number}")
         label.setText(str(count))
+        
+    @Slot(int, int)
+    def goto_tab(self, tab_index):
+        self.window.tabWidget.setCurrentIndex(tab_index)

@@ -9,7 +9,7 @@ class OutputChannel:
         self.off_time = off_time
         self.running = False
         self.state = False
-        self.owner = None
+        self.owner = None # manual or scheduler
         self.counter = 0
         self.next_change = 0
         if g.USE_GPIO:
@@ -48,6 +48,14 @@ class OutputChannel:
     def clear(self):
         self.counter = 0
 
+    def set_manual(self, on: bool):
+        self.running = on
+        self.state = on
+        if g.USE_GPIO:
+            if on:
+                self.led.on()
+            else:
+                self.led.off()
 
     def setTiming(self, on_time, off_time):
         self.on_time = on_time
