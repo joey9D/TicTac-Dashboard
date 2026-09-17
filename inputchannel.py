@@ -30,8 +30,6 @@ class InputChannel(QtCore.QObject):
         # Notify Qt
         label = getattr(state.window, f"l_CntInVal{self.number}")
         label.setText(str(self.counter))
-        label_led = getattr(state.window, f"lbl_InputCnt{self.number}")
-        label_led.setText(str(self.counter))
         
 
     def update(self):

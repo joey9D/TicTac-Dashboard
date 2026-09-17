@@ -106,6 +106,8 @@ class SlotController(QObject):
             self.outputs[value-1].clear()
             getattr(self.window, f"lbl_OutputCnt{value}").setText("0")
             getattr(self.window, f"l_CntOutVal{value}").setText("0")
+            getattr(self.window, f"lbl_InputCnt{value}").setText("0")
+            getattr(self.window, f"l_CntInVal{value}").setText("0")
 
 
     @Slot(int,int)
@@ -146,6 +148,8 @@ class SlotController(QObject):
         for i, input_channel in enumerate(inputs, start=1):
             input_channel.clear()
             getattr(self.window, f"l_CntInVal{i}").setText("0")
+            getattr(self.window, f"lbl_InputCnt{i}").setText("0")
+
 
 
     @Slot(int, int)
@@ -154,6 +158,8 @@ class SlotController(QObject):
         labelLed.setText(str(count))
         label = getattr(self.window, f"l_CntInVal{number}")
         label.setText(str(count))
+        label_led = getattr(self.window, f"lbl_InputCnt{self.number}")
+        label_led.setText(str(count))
         
     @Slot(int, int)
     def goto_tab(self, tab_index):

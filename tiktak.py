@@ -125,6 +125,9 @@ if __name__ == "__main__":
     scheduler_thread.started.connect(scheduler.run)
     scheduler.countChanged.connect(controller.update_output_counter)
     
+    for input in inputs:
+        input.countChanged.connect(controller.update_input_counter)
+    
     scheduler_thread.start()
 
     state.window.tabWidget.setCurrentIndex(0)
