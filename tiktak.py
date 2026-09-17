@@ -136,6 +136,11 @@ if __name__ == "__main__":
     state.window.pB_StartAll.clicked.connect(lambda: controller.start_all(outputs))
     state.window.pB_StopAll.clicked.connect(lambda: controller.stop_all(outputs))
     state.window.pB_ClearAll.clicked.connect(lambda: controller.clear_all(outputs, inputs))
+    
+    for i in range(1, 9):
+        getattr(state.window, f"pB_ButtonSettings{i}").clicked.connect(
+            partial(controller.goto_tab, i)
+        )
 
     # Tab Manuell
     state.window.toggle_All.toggled.connect(lambda checked: controller.toggle_all_manual(checked))
