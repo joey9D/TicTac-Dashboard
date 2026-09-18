@@ -28,9 +28,9 @@ class InputChannel(QtCore.QObject):
         self.counter += 1
         # print(f"Input GPIO {self.gpio}: rising edge, count = {self.counter}")
         # Notify Qt
-        label = getattr(state.window, f"l_CntInVal{self.number}")
-        label.setText(str(self.counter))
-        
+        # label = getattr(state.window, f"l_CntInVal{self.number}")
+        # label.setText(str(self.counter))
+        self.countChanged.emit(self.number, self.counter)
 
     def update(self):
         # Nothing required here.
@@ -39,7 +39,7 @@ class InputChannel(QtCore.QObject):
 
     def clear(self):
         self.counter = 0
-        self.countChanged.emit(self.counter)
+        self.countChanged.emit(self.number, self.counter)
 
     def close(self):
         if g.USE_GPIO:
