@@ -13,9 +13,9 @@ scheduler_thread = None
 UI_MAIN = "Forms/TikTak.ui"
 UI_ABOUT = "Forms/about.ui"
 
-USE_GPIO = False
+USE_GPIO = True #False
 
 if USE_GPIO:
     import os
-    os.environ['GPIOZERO_PIN_FACTORY'] = 'mock'
+    os.environ['GPIOZERO_PIN_FACTORY'] = 'lgpio'
     from gpiozero import LED, Button
