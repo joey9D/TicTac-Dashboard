@@ -21,6 +21,7 @@ class InputChannel(QtCore.QObject):
             self.button = g.Button(gpio, pull_up=False, bounce_time=0.05)
             # Called on the rising/active edge
             self.button.when_pressed = self._rising_edge
+            self.button.when_released = self._falling_edge
         else:
             print(f"Init InputChannel GPIO {self.gpio}")
 
@@ -31,6 +32,10 @@ class InputChannel(QtCore.QObject):
         # label = getattr(state.window, f"l_CntInVal{self.number}")
         # label.setText(str(self.counter))
         self.countChanged.emit(self.number, self.counter)
+        getattr(state.window, f"lbl_InputLed{self.number}").setStyleSheet("background-color: red;")
+
+    def _falling_edge(self):
+        getattr(state.window, f"lbl_InputLed{self.number}").setStyleSheet("background-color: green;")
 
     def update(self):
         # Nothing required here.

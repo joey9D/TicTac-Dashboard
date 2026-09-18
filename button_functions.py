@@ -17,6 +17,8 @@ class SlotController(QObject):
         self.lock_timer.setInterval(150)  # alle 150ms, Wert nach Bedarf anpassen
         self.lock_timer.timeout.connect(self.update_toggle_locks)
         self.lock_timer.start()
+        
+        self.inputNewCnt = 0
 
     def update_toggle_locks(self):
         for i, output in enumerate(self.outputs, start=1):
@@ -160,6 +162,14 @@ class SlotController(QObject):
         label.setText(str(count))
         label_led = getattr(self.window, f"lbl_InputCnt{number}")
         label_led.setText(str(count))
+        
+        # previousCnt = self.inputNewCnt
+        # self.inputNewCnt = count
+        
+        # if self.inputNewCnt > previousCnt:
+        #     getattr(self.window, f"lbl_InputLed{number}").setStyleSheet("background-color: red;")
+        # else:
+        #     getattr(self.window, f"lbl_InputLed{number}").setStyleSheet("background-color: green;")
         
     @Slot(int, int)
     def goto_tab(self, tab_index):
