@@ -193,22 +193,6 @@
              <item row="0" column="0">
               <layout class="QVBoxLayout" name="vL_Led1_5">
                <item>
-                <spacer name="verticalSpacer_4">
-                 <property name="orientation">
-                  <enum>Qt::Orientation::Vertical</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Policy::Preferred</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item>
                 <widget class="QLabel" name="lbl_Output_Active">
                  <property name="text">
                   <string>Output active : </string>
@@ -219,22 +203,6 @@
                 </widget>
                </item>
                <item>
-                <spacer name="verticalSpacer_3">
-                 <property name="orientation">
-                  <enum>Qt::Orientation::Vertical</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Policy::Preferred</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                </spacer>
-               </item>
-               <item>
                 <widget class="QLabel" name="lbl_Input_active">
                  <property name="text">
                   <string>Inpt active : </string>
@@ -243,22 +211,6 @@
                   <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
                  </property>
                 </widget>
-               </item>
-               <item>
-                <spacer name="verticalSpacer_2">
-                 <property name="orientation">
-                  <enum>Qt::Orientation::Vertical</enum>
-                 </property>
-                 <property name="sizeType">
-                  <enum>QSizePolicy::Policy::Preferred</enum>
-                 </property>
-                 <property name="sizeHint" stdset="0">
-                  <size>
-                   <width>20</width>
-                   <height>30</height>
-                  </size>
-                 </property>
-                </spacer>
                </item>
                <item>
                 <widget class="QLabel" name="lbl_Settings">
@@ -361,7 +313,7 @@
                <item>
                 <widget class="QPushButton" name="pB_ButtonSettings2">
                  <property name="text">
-                  <string>Taster </string>
+                  <string>Taster 2</string>
                  </property>
                 </widget>
                </item>
@@ -939,6 +891,26 @@
                   <string>Taster 6</string>
                  </property>
                 </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <spacer name="verticalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Orientation::Vertical</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Policy::Preferred</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
                </item>
               </layout>
              </item>
