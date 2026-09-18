@@ -158,7 +158,7 @@ class SlotController(QObject):
         labelLed.setText(str(count))
         label = getattr(self.window, f"l_CntInVal{number}")
         label.setText(str(count))
-        label_led = getattr(self.window, f"lbl_InputCnt{self.number}")
+        label_led = getattr(self.window, f"lbl_InputCnt{number}")
         label_led.setText(str(count))
         
     @Slot(int, int)
