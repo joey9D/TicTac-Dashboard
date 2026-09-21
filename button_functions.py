@@ -153,7 +153,6 @@ class SlotController(QObject):
             getattr(self.window, f"lbl_InputCnt{i}").setText("0")
 
 
-
     @Slot(int, int)
     def update_input_counter(self, number, count):
         labelLed = getattr(self.window, f"l_RunState{number}")
@@ -171,6 +170,12 @@ class SlotController(QObject):
         # else:
         #     getattr(self.window, f"lbl_InputLed{number}").setStyleSheet("background-color: green;")
         
+
+    @Slot(int, bool)
+    def update_input_led(self, number, active):
+        color = "red" if active else "green"
+        getattr(self.window, f"lbl_InputLed{number}").setStyleSheet(f"background-color: {color};")
+
     @Slot(int, int)
     def goto_tab(self, tab_index):
         self.window.tabWidget.setCurrentIndex(tab_index)

@@ -127,6 +127,7 @@ if __name__ == "__main__":
     
     for input in inputs:
         input.countChanged.connect(controller.update_input_counter)
+        input.stateChanged.connect(controller.update_input_led)
     
     scheduler_thread.start()
 

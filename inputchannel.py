@@ -4,6 +4,7 @@ import app_state as state
 
 class InputChannel(QtCore.QObject):
     countChanged = QtCore.Signal(int, int)
+    stateChanged = QtCore.Signal(int, bool)
 
     def __init__(self, number, gpio):
         super().__init__()
@@ -32,10 +33,10 @@ class InputChannel(QtCore.QObject):
         # label = getattr(state.window, f"l_CntInVal{self.number}")
         # label.setText(str(self.counter))
         self.countChanged.emit(self.number, self.counter)
-        getattr(state.window, f"lbl_InputLed{self.number}").setStyleSheet("background-color: red;")
+        self.stateChanged.emit(self.number, True)
 
     def _falling_edge(self):
-        getattr(state.window, f"lbl_InputLed{self.number}").setStyleSheet("background-color: green;")
+        self.stateChanged.emit(self.number, False)
 
     def update(self):
         # Nothing required here.
