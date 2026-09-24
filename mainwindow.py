@@ -15,7 +15,7 @@ class MainWindow(QMainWindow):
         self.showMaximized()
 
     def _load_ui(self, ui_path):
-        ui_file = QFile(ui_path)
+        ui_file = QFile(str(ui_path))
         if not ui_file.open(QIODevice.ReadOnly):
             print(f"Cannot open {ui_path}: {ui_file.errorString()}")
             sys.exit(-1)
@@ -37,3 +37,4 @@ class MainWindow(QMainWindow):
         if ui is None:
             raise AttributeError(name)
         return getattr(ui, name)
+    
