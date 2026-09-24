@@ -1,11 +1,11 @@
 # This Python file uses the following encoding: utf-8
 import sys
 import time
-from PySide6.QtUiTools import QUiLoader
+# from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QApplication
 from PySide6.QtCore import QFile, QIODevice, QObject, QThread, Signal
 from functools import partial
-from animated_toggle import AnimatedToggle
+# from animated_toggle import AnimatedToggle
 
 # ------------------------------------------------------------------------
 # Global variables
@@ -34,12 +34,10 @@ import outputchannel as oc
 class OutputScheduler(QObject):
     countChanged = Signal(int, int)
 
-
     def __init__(self, outputs):
         super().__init__()
         self.outputs = outputs
         self.running = True
-
 
     def run(self):
         while self.running:
@@ -84,7 +82,6 @@ if __name__ == "__main__":
     # ------------------------------------------------------------
     # Create Outputs
     # ------------------------------------------------------------
-
     for i in range(1, 9):
         getattr(state.window, f"sB_OnTime{i}").setValue(300)
         getattr(state.window, f"sB_OffTime{i}").setValue(200)
@@ -139,7 +136,7 @@ if __name__ == "__main__":
     # clear_all()
 
     # Menubar
-    state.window.actionVersion.triggered.connect(lambda: About.show_about(state.window))
+    state.window.actionVersion_2.triggered.connect(lambda: About.show_about(g.UI_ABOUT, state.window))
 
     # Tab Allgemein
     state.window.pB_StartAll.clicked.connect(lambda: controller.start_all(outputs))
