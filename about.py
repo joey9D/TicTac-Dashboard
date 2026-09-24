@@ -9,11 +9,16 @@ class About(QDialog):
 
     _instance = None  # hält das eine offene Info-Fenster
 
-    def __init__(self, parent=None):
+    def __init__(self, ui_path, parent=None):
         super().__init__(parent)
+        self.ui = None
+        self.setWindowTitle("Dashboard-Version")
+        # self.setGeometry(100, 100, 400, 225)
+        self.resize(400, 225)
+        self._load_ui(ui_path)
 
-        # .ui-Datei laden
-        ui_file = QFile(str(g.UI_ABOUT))
+    def _load_ui(self, ui_path):
+        ui_file = QFile(str(ui_path))
         if not ui_file.open(QIODevice.ReadOnly):
             raise FileNotFoundError(f"Cannot open {g.UI_ABOUT}: {ui_file.errorString()}")
 
@@ -34,17 +39,14 @@ class About(QDialog):
             self.ui.buttonBox.accepted.connect(self.accept)
             self.ui.buttonBox.rejected.connect(self.reject)
 
-        # Versionsnummer eintragen
         if hasattr(self.ui, "lbl_Version"):
             self.ui.lbl_Version.setText(f"Version {g.APP_VERSION}")
 
-        self.setWindowTitle(self.ui.windowTitle() or "Info/Version")
-
     @classmethod
-    def show_about(cls, parent=None):
+    def show_about(cls, ui_path, parent=None):
         print("show_about aufgerufen")
         if cls._instance is None:
-            cls._instance = cls(parent)
+            cls._instance = cls(ui_path, parent)
             cls._instance.finished.connect(cls._on_closed)
 
         cls._instance.show()
