@@ -10,6 +10,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pyc
+bmp.py
 
 # Virtuelle Umgebungen
 venv/
