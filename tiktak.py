@@ -65,13 +65,15 @@ class OutputScheduler(QObject):
 # ------------------------------------------------------------------------
 import button_functions as bf
 
+# ------------------------------------------------------------------------
+# Windows
+# ------------------------------------------------------------------------
+import mainwindow as mw
+from about import About
 
 # ------------------------------------------------------------------------
 # Main Function
 # ------------------------------------------------------------------------
-import mainwindow as mw
-
-
 if __name__ == "__main__":
 
     app = QApplication(sys.argv)
@@ -135,6 +137,9 @@ if __name__ == "__main__":
 
     # Reset all values
     # clear_all()
+
+    # Menubar
+    state.window.actionVersion.triggered.connect(lambda: About.show_about(state.window))
 
     # Tab Allgemein
     state.window.pB_StartAll.clicked.connect(lambda: controller.start_all(outputs))
