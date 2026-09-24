@@ -13,7 +13,7 @@ scheduler_thread = None
 # Path to the UI file
 # ------------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent
-
+IMG_LOGO = BASE_DIR / "images" / "logo.png"
 UI_MAIN  = BASE_DIR / "Forms" / "TikTak.ui"
 UI_ABOUT = BASE_DIR / "Forms" / "about.ui"
 
