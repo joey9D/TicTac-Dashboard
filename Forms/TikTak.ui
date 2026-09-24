@@ -38,7 +38,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>8</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_general">
        <attribute name="title">
