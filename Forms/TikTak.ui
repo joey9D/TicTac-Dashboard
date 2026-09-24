@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>828</width>
-    <height>430</height>
+    <height>487</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -33,7 +33,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>8</number>
       </property>
       <widget class="QWidget" name="tab_general">
        <attribute name="title">
@@ -2353,7 +2353,7 @@
         <item row="0" column="0">
          <layout class="QHBoxLayout" name="hL_Logic8">
           <property name="spacing">
-           <number>6</number>
+           <number>-1</number>
           </property>
           <property name="leftMargin">
            <number>0</number>
@@ -3200,16 +3200,16 @@
      <x>0</x>
      <y>0</y>
      <width>828</width>
-     <height>21</height>
+     <height>30</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuAllgemein">
+   <widget class="QMenu" name="menuInfo">
     <property name="title">
      <string>Info</string>
     </property>
     <addaction name="actionVersion_2"/>
    </widget>
-   <addaction name="menuAllgemein"/>
+   <addaction name="menuInfo"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionVersion">
