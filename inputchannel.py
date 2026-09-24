@@ -1,10 +1,10 @@
 import globals as g
 from PySide6 import QtCore
-import app_state as state
 
 class InputChannel(QtCore.QObject):
-    countChanged = QtCore.Signal(int, int)
-    stateChanged = QtCore.Signal(int, bool)
+    countChanged = QtCore.Signal(int, int)          # Scheduler Coutner
+    stateChanged = QtCore.Signal(int, bool)         # Scheduler: LED
+    manualStateChanged = QtCore.Signal(int, bool)   # Manual: LED
 
     def __init__(self, number, gpio):
         super().__init__()
@@ -12,6 +12,7 @@ class InputChannel(QtCore.QObject):
         self.number = number
         self.gpio = gpio
         self.counter = 0
+        self.manual = False
 
         # pull_up=False:
         # inactive = LOW
@@ -26,7 +27,17 @@ class InputChannel(QtCore.QObject):
         else:
             print(f"Init InputChannel GPIO {self.gpio}")
 
+    def set_manual(self, on: bool):
+        if on:
+            self.manual = True
+    
+        self.manualStateChanged.emit(self.number, False)
+
     def _rising_edge(self):
+        if self.manual:
+            self.manualStateChanged.emit(self.number, True)
+            return
+        
         self.counter += 1
         # print(f"Input GPIO {self.gpio}: rising edge, count = {self.counter}")
         # Notify Qt
@@ -36,6 +47,11 @@ class InputChannel(QtCore.QObject):
         self.stateChanged.emit(self.number, True)
 
     def _falling_edge(self):
+        if self.manual:
+            self.manualStateChanged.emit(self.number, False)
+            self.manual = False
+            return
+        
         self.stateChanged.emit(self.number, False)
 
     def update(self):

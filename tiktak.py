@@ -116,7 +116,7 @@ if __name__ == "__main__":
     # ------------------------------------------------------------
     # Start scheduler thread
     # ------------------------------------------------------------
-    controller = bf.SlotController(state.window, outputs)
+    controller = bf.SlotController(state.window, outputs, inputs)
     
     scheduler_thread = QThread()
     scheduler = OutputScheduler(outputs)
@@ -127,6 +127,7 @@ if __name__ == "__main__":
     for input in inputs:
         input.countChanged.connect(controller.update_input_counter)
         input.stateChanged.connect(controller.update_input_led)
+        input.manualStateChanged.connect(controller.update_manual_input_led)
     
     scheduler_thread.start()
 

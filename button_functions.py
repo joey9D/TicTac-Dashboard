@@ -7,10 +7,11 @@ from PySide6.QtCore import QObject, QTimer, Slot, Signal
 class SlotController(QObject):
     output_toggled = Signal(int, bool)
     
-    def __init__(self, window, outputs):
+    def __init__(self, window, outputs, inputs):
         super().__init__()
         self.window = window
         self.outputs = outputs
+        self.inputs = inputs
 
         # Timer anlegen und starten -> ruft update_toggle_locks() periodisch auf
         self.lock_timer = QTimer(self)
@@ -37,6 +38,7 @@ class SlotController(QObject):
     def toggle_Button_manual(self, value, checked):
         idx = value - 1
         output = self.outputs[idx]
+        input = self.inputs[idx]
               
         if checked:
             if not output.claim("manual"):
@@ -47,10 +49,12 @@ class SlotController(QObject):
                 return
             
             output.set_manual(True)
+            input.set_manual(True)
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: red;")
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: #ff9725; color: black")
             getattr(self.window, f"l_RunState{value}").setText("Manual")
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: #ff9725;")
+            getattr(self.window, f"lbl_InputLed{value}").setStyleSheet("background-color: #ff9725")
             self.output_toggled.emit(value, True)
             
         else:
@@ -59,10 +63,13 @@ class SlotController(QObject):
             
             output.set_manual(False)
             output.release("manual")
+            input.set_manual("False")
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: green;")
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: green; color: black")
             getattr(self.window, f"l_RunState{value}").setText("Stopped")
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: green;")
+            getattr(self.window, f"lbl_InputLed{value}").setStyleSheet("background-color: green")
+
             self.output_toggled.emit(value, False)
 
     @Slot(int, list)
@@ -156,6 +163,11 @@ class SlotController(QObject):
     def update_input_led(self, number, active):
         color = "red" if active else "green"
         getattr(self.window, f"lbl_InputLed{number}").setStyleSheet(f"background-color: {color};")
+
+    @Slot(int, bool)
+    def update_manual_input_led(self, number, active):
+        color = "red" if active else "green"
+        getattr(self.window, f"lbl_ManualLed_In{number}").setStyleSheet(f"background-color: {color};")
 
     @Slot(int, int)
     def goto_tab(self, tab_index):
