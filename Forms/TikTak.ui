@@ -2353,7 +2353,7 @@
         <item row="0" column="0">
          <layout class="QHBoxLayout" name="hL_Logic8">
           <property name="spacing">
-           <number>-1</number>
+           <number>6</number>
           </property>
           <property name="leftMargin">
            <number>0</number>
@@ -3200,7 +3200,7 @@
      <x>0</x>
      <y>0</y>
      <width>828</width>
-     <height>30</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuInfo">

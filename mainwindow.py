@@ -1,6 +1,7 @@
 import sys
+from pathlib import Path
 from PySide6.QtWidgets import QMainWindow
-from PySide6.QtCore import QFile, QIODevice
+from PySide6.QtCore import QFile, QIODevice, QDir
 from PySide6.QtUiTools import QUiLoader
 from animated_toggle import AnimatedToggle
 
@@ -22,7 +23,7 @@ class MainWindow(QMainWindow):
 
         loader = QUiLoader()
         loader.registerCustomWidget(AnimatedToggle)
-
+        loader.setWorkingDirectory(QDir(str(Path(ui_path).parent)))
         self.ui = loader.load(ui_file)
         ui_file.close()
 

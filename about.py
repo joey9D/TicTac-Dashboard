@@ -1,4 +1,5 @@
-from PySide6.QtCore import QFile, QIODevice
+from pathlib import Path
+from PySide6.QtCore import QFile, QIODevice, QDir
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtWidgets import QDialog, QVBoxLayout
 
@@ -23,6 +24,7 @@ class About(QDialog):
             raise FileNotFoundError(f"Cannot open {g.UI_ABOUT}: {ui_file.errorString()}")
 
         loader = QUiLoader()
+        loader.setWorkingDirectory(QDir(str(Path(ui_path).parent)))
         self.ui = loader.load(ui_file, self)
         ui_file.close()
 
