@@ -46,7 +46,6 @@ class SlotController(QObject):
                 toggle.blockSignals(False)
                 return
             
-            # output.start()
             output.set_manual(True)
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: red;")
             getattr(self.window, f"l_RunState{value}").setStyleSheet("background-color: #ff9725; color: black")
@@ -58,7 +57,6 @@ class SlotController(QObject):
             if output.owner != "manual":
                 return
             
-            # output.stop()
             output.set_manual(False)
             output.release("manual")
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: green;")
@@ -66,7 +64,6 @@ class SlotController(QObject):
             getattr(self.window, f"l_RunState{value}").setText("Stopped")
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: green;")
             self.output_toggled.emit(value, False)
-
 
     @Slot(int, list)
     def start_Button(self, value, outputs):
@@ -85,7 +82,6 @@ class SlotController(QObject):
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: red;")
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: #ff9725;")
 
-
     @Slot(int, list)
     def stop_Button(self, value, outputs):
         if 1 <= value <= len(outputs):
@@ -101,7 +97,6 @@ class SlotController(QObject):
             getattr(self.window, f"lbl_OutputLed{value}").setStyleSheet("background-color: green;")
             getattr(self.window, f"lbl_ManualLed_Out{value}").setStyleSheet("background-color: green;")
 
-
     @Slot(int, list)
     def clear_Button(self, value, outputs):
         if 1 <= value <= len(outputs):
@@ -110,7 +105,6 @@ class SlotController(QObject):
             getattr(self.window, f"l_CntOutVal{value}").setText("0")
             getattr(self.window, f"lbl_InputCnt{value}").setText("0")
             getattr(self.window, f"l_CntInVal{value}").setText("0")
-
 
     @Slot(int,int)
     def update_output_counter(self, number, count):
@@ -125,18 +119,15 @@ class SlotController(QObject):
         if diffVal != 0 and iodiff > diffVal:
             self.stop_Button(number, self.outputs)
 
-
     @Slot(list)
     def start_all(self, outputs):
         for i in range(1, (len(outputs)+1)):
             self.start_Button(i, outputs)
 
-
     @Slot(list)
     def stop_all(self, outputs):
         for i in range(1, (len(outputs)+1)):
             self.stop_Button(i, outputs)
-
 
     @Slot(list, list)
     def clear_all(self, outputs, inputs):
@@ -152,7 +143,6 @@ class SlotController(QObject):
             getattr(self.window, f"l_CntInVal{i}").setText("0")
             getattr(self.window, f"lbl_InputCnt{i}").setText("0")
 
-
     @Slot(int, int)
     def update_input_counter(self, number, count):
         labelLed = getattr(self.window, f"l_RunState{number}")
@@ -162,15 +152,6 @@ class SlotController(QObject):
         label_led = getattr(self.window, f"lbl_InputCnt{number}")
         label_led.setText(str(count))
         
-        # previousCnt = self.inputNewCnt
-        # self.inputNewCnt = count
-        
-        # if self.inputNewCnt > previousCnt:
-        #     getattr(self.window, f"lbl_InputLed{number}").setStyleSheet("background-color: red;")
-        # else:
-        #     getattr(self.window, f"lbl_InputLed{number}").setStyleSheet("background-color: green;")
-        
-
     @Slot(int, bool)
     def update_input_led(self, number, active):
         color = "red" if active else "green"
